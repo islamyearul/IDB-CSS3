@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background: #C6F7D2;
+			font-size: 30pt;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			margin: 50px 40px;
+		}
+		img[alt]{
+			border: 5px solid red;
+			display: block;
+			margin:40px;
+		}
+		img[src]{
+			border: 5px solid blue;
+			display: block;
+			margin:40px;
+		}
+		input[type="text"]{
+			border: 5px solid green;
+			display: block;
+		}
+		a[href^="www"]{
+			border: 5px solid blue;
+			display: block;
+			margin:40px;
+			/*^ ata deya thakle er vitor ja thakbe ta diye suru sob element a style ata apply hobe*/
+		}
+		a[href$=".pdf"]{
+			background: #C9F9FB;
+			display: block;
+		}
+		p:first-line{
+			font-weight: bolder;
+			color: red;
+	
+		}
+		p.add:first-letter{
+					font-weight: bolder;
+			color: red;
+			font-size:80pt;
+		}
+		
+	</style>
+</head>
+<body>
+	<img src="" alt="Image Not Found">
+	<img src="Capture.PNG" alt="Image Not Found">
+	<input type="text" name="name">Name
+	<input type="text" name="name">Name
+
+	<a href="www.google.com">Google</a>
+	<a href="https://www.google.com">Google</a>
+	<a href="abc.com.pdf">PDF </a>
+	<a href="abc.com">Non PDF</a>
+
+	<p class="mm">
+		Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Labore itaque, quia illo vero laborum debitis harum alias eaque est doloribus ex ipsam laboriosam nesciunt, repudiandae delectus vitae laudantium incidunt iure similique tempora sint veritatis, quaerat dicta expedita placeat. Vero doloremque officia laboriosam asperiores rem dicta, modi rerum quas eum maiores!
+	</p>
+	<p class="add">
+		Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Commodi at exercitationem veniam temporibus sunt quo facilis aut eius voluptates provident.
+	</p>
+</body>
+</html>

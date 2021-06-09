@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0169)file:///D:/IDB/WDPF/lockdown/Exam/form_validation.html?fname=dfgf&lname=fgfdgfd&email=yearulislamonem%40gmail.com&company=yrty&address=rtyrt&bdt=2021-05-01&submit=Submit -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="file:///D:/IDB/WDPF/lockdown/Exam/form_validation.html?fname=dfgf&amp;lname=fgfdgfd&amp;email=yearulislamonem%40gmail.com&amp;company=yrty&amp;address=rtyrt&amp;bdt=2021-05-01&amp;submit=Submit" name="form" onsubmit="return myfun()">
+		<h3>Online Registration</h3>
+		<table>
+			<tbody><tr>
+				<td>First Name:</td>
+				<td>Last Name:</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="fname" size="20px"></td>
+				<td><input type="text" name="lname" size="20px"></td>
+			</tr>
+		</tbody></table>
+		<label for="email">Email Address:</label><br>
+		<input type="email" name="email" size="45px"><br><br>
+		<label for="company">Company (If Applicable)</label><br>
+		<input type="text" name="company" size="45px"><br><br>
+		<label for="Address">Address:</label><br>
+		<input type="text" name="address" size="45px"><br><br>
+		<label for="bdt">Date Of Birth:</label><br>
+		<!-- <input type="month" placeholder="Month"> &nbsp;&nbsp; <input type="text" placeholder="Day"> &nbsp;&nbsp; <input type="text" placeholder="Year"> -->
+		<input type="date" name="bdt"> <br><br>
+		<input type="submit" name="submit" value="Submit"> &nbsp;&nbsp;
+		<input type="reset" name="reset" value="Submit">
+
+
+
+ <!-- <label for="fname">First Name:</label><br>
+		<input type="text" name="fname">
+		<label for="lname">Last Name:</label><br>
+		<input type="text" name="lname"> -->
+		<!-- <table>
+			<tr>
+				<td>First Name:</td>
+				<td>Last Name:</td>
+			</tr>
+			<tr>
+				<td><input type="text"  name="fname" size="20px"></td>
+				<td><input type="text"  name="lname" size="20px"></td>
+			</tr>
+			<tr>
+				<td colspan="2">Email Address:</td>
+			</tr>
+			<tr>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td colspan="2">Company (If Applicable)</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="text" name="company">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">Physical Address;</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="text" name="address">
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2"></td>
+			</tr>
+</table> -->
+
+	</form>
+	<script>
+		function myfun(){
+		var fname=document.form.fname.value;
+		var lname=document.form.lname.value;
+		var email=document.form.email.value;
+		var company=document.form.company.value;
+		var address=document.form.address.value;
+		var bdt=document.form.bdt.value;
+		
+		if (fname=="") {
+			alert("Please Enter Your First Name");
+			return false;
+		} else if (lname=="") {
+			alert("Please Enter Your Last Name");
+			return false;	
+		} else if (email=="") {
+			alert("Please Enter Your Email Addresa");
+			return false;
+			
+		} else if (company=="") {
+			alert("Please Enter Your Company Name");
+			return false;
+			
+		} else if (address=="") {
+			alert("Please Enter Your Address");
+			return false;
+			
+		} else if (bdt=="") {
+			alert("Please Enter Your Birthday");
+			return true;
+			
+		} else{
+			alert("all Data Is Ok")
+		}
+
+	}
+	</script>
+
+</body></html>
